@@ -17,17 +17,21 @@
         <h1>
             Thank you, @Model.Name!
         </h1>
-        @if (Model.Attending == "Y")
+        @if (Model.Attending == "1")
         {
-            @:It's great that you're coming. We will see you in Class!
+            @:You gave this site a rating of 1
         }
-        @if (Model.Attending == "N")
+        @if (Model.Attending == "2")
         {
-            @:Great Decision, better to be safe than Sorry!
+            @:You gave this site a rating of 2
+        }
+        @if (Model.Attending == "3")
+        {
+            @:You gave this site a rating of 3
         }
         else
         {
-            @:I think you didnt enter any input!
+            @:Thank You!
         }
     </p>
 

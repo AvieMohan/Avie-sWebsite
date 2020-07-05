@@ -42,8 +42,8 @@
         ViewData["Title"] = "User Action Assignment";
     }
     <h1>@ViewData["Title"]</h1>
-    <h2>Assignment:Razor form</h2>
-    <h4>This Page accepts data from users and upon submition sends back a response.</h4>
+    <h2>Data Input -: </h2>
+    <h4>Website user data capture.</h4>
 
     <form asp-action="UserAction" method="post">
         <p>
@@ -51,17 +51,18 @@
             <input asp-for="Name" />
         </p>
         <p>
-            <label asp-for="City">Your City:</label>
+            <label asp-for="City">Email Address:</label>
             <input asp-for="City" />
         </p>
         <p>
-            <label>Will you attend in Person?</label>
+            <label>How would you rate this site?</label>
             <select asp-for="Attending">
                 <option value="">
-                    Choose an option
+                    Score this Site
                 </option>
-                <option value="Y">Yes</option>
-                <option value="N">No</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
             </select>
         </p>
         <button type="submit">Submit Response</button>
