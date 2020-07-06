@@ -24,7 +24,7 @@ namespace InClass2_Exercise_API.Controllers
         HttpClient httpClient;
 
         static string BASE_URL = "https://developer.nps.gov/api/v1/";
-        static string API_KEY = "36KAHyxFO1wZnsVtYITsJNm3pCLeSoUalsdo6aSx"; // Bibhas Key
+        static string API_KEY = "mJNkKnWeQt3hFlbclu1DeCNJ2a68oEbmJ6KCLfAy"; // Avie's Key
         public IActionResult Index()
         {
             httpClient = new HttpClient();
